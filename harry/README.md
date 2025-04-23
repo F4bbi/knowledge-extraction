@@ -127,8 +127,8 @@ c. Let $C = aX − bY + c^2Z$, where $a$, $b$, and $c$ are real-valued constants
 
 As before, $C$ is a normal. Let's start by calculating its mean, that is simply $\mathbb{E}[C] = aμ_1​−bμ_2​+c^2μ_3​$
 
-Let's now calculate the variance. Rember that the variance is not linear like expectation: $\operatorname{Var}(aX) = a^2 \operatorname{Var}(X)$.
-Then $\operatorname{Var}(C) = a^2\sigma_1^2 + b^2\sigma_2^2 + (c^2)^2\sigma_3^2 = a^2\sigma_1^2 + b^2\sigma_2^2 + c^4\sigma_3^2$
+Let's now calculate the variance. Remember that the variance is not linear like expectation: $\text{Var}(aX) = a^2 \text{Var}(X)$.
+Then $\text{Var}(C) = a^2\sigma_1^2 + b^2\sigma_2^2 + (c^2)^2\sigma_3^2 = a^2\sigma_1^2 + b^2\sigma_2^2 + c^4\sigma_3^2$
 
 Putting all together: $C \sim \mathcal{N}\left(a\mu_1 - b\mu_2 + c^2\mu_3, a^2\sigma_1^2 + b^2\sigma_2^2 + c^4\sigma_3^2\right)$
 

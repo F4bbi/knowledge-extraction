@@ -1,0 +1,124 @@
+# 📝 Paper Writing Guidelines for Authors
+
+This guide outlines key principles to help authors avoid common pitfalls and meet the expectations of peer reviewers and the broader research community.
+
+## 1. 🧪 Rigorous Experimentation
+
+Many submissions fall short on experimental rigor—insufficient controls, lack of repeatability, vague protocol descriptions, or no statistical power analysis.
+
+**Best-Practice Solutions:**
+
+1. **Define Hypotheses & Variables**
+
+   * State null and alternative hypotheses explicitly.
+   * Identify independent, dependent, and control variables.
+
+2. **Use Proper Controls & Randomization**
+
+   * When possible, include both positive and negative controls.
+   * Randomly assign subjects or data batches to conditions to avoid bias.
+
+3. **Replicate & Report Variability**
+
+   * Run ≥ 3 independent trials; report means ± standard deviations.
+   * If variation exceeds \~5%, investigate sources before concluding.
+
+4. **Perform Power Analysis**
+
+   * Calculate required sample size up-front to detect your expected effect size (e.g., Cohen's d = 0.4).
+   * Document alpha (commonly 0.05) and desired power (commonly 0.8).
+
+5. **Pre-register & Share Protocols**
+
+   * When journal or funder policies allow, register your design on platforms like OSF.
+   * Include detailed methods (e.g., scripts, hardware specs) in supplements.
+
+## 2. 📊 Comparison to Prior Work
+
+Authors often claim novelty without fair, head-to-head benchmarks against the most relevant baselines.
+
+**Best-Practice Solutions:**
+
+1. **Conduct a Focused Literature Review**
+
+   * Identify 3-5 seminal and recent papers tackling the same problem.
+   * Highlight gaps your approach fills.
+
+2. **Re-implement or Use Published Code**
+
+   * Whenever possible, obtain or re-implement baseline methods rather than quoting old results.
+   * Match preprocessing, hyperparameters, and evaluation metrics exactly.
+
+3. **Present Results in Comparative Tables**
+
+   ```markdown
+   | Method        | Dataset     | Metric     | Result         |
+   |---------------|-------------|------------|----------------|
+   | Proposed      | X           | Accuracy   | 87.4 %         |
+   | Baseline A    | X           | Accuracy   | 82.1 %         |
+   | Baseline B    | X           | Accuracy   | 84.3 %         |
+   ```
+
+   * Include confidence intervals or standard errors for each entry.
+
+4. **Discuss Trade-Offs**
+
+   * If your method improves one metric but worsens another (e.g., speed vs. accuracy), analyze why.
+   * Be transparent about limitations relative to baselines.
+
+## 3. 🔍 Quantitative Claims Need Proof
+
+“20 % improvement” sounds impressive—until readers realize there's no reported variance, p-value, or context for that number.
+
+**Best-Practice Solutions:**
+
+1. **State Claims Early & Precisely**
+
+   * In the Abstract/Introduction, quantify your main gain (e.g., “Our model reduces error by 20 %.”).
+
+2. **Prove Them in the Results Section**
+
+   * Show tabular or graphical results with error bars (95 % CI) or p-values.
+   * Example:
+
+     ```markdown
+     | Model         | Mean Error | 95 % CI      | p-value |
+     |---------------|------------|--------------|---------|
+     | Ours          | 0.12       | [0.10, 0.14] | 0.003   |
+     | Baseline      | 0.15       | [0.13, 0.17] | —       |
+     ```
+
+3. **Use Appropriate Statistical Tests**
+
+   * T-tests, ANOVA, or non-parametric tests depending on distribution.
+   * Correct for multiple hypotheses when reporting several metrics.
+
+4. **Explain Practical Impact**
+
+   * Beyond percentages, describe what a 20 % reduction means in domain terms (e.g., 2 days saved in processing time).
+
+## 4. 📉 Dataset Size & Diversity
+
+Too-small or homogenous datasets lead to overfitting and findings that don't generalize.
+
+**Best-Practice Solutions:**
+
+1. **Follow “Rule of Ten” When Feasible**
+
+   * Aim for ≥ 10 samples per feature dimension (e.g., 50 features → ≥ 500 samples).
+
+2. **Leverage Power-Based Sample Size Calculations**
+
+   * For a medium effect (d = 0.4), two groups need \~100 samples each.
+
+3. **Document Dataset Splits & Diversity**
+
+   * Report train/validation/test sizes and demographic or source diversity (e.g., multiple sites, time periods).
+
+4. **Augment When Necessary**
+
+   * If real-world data are limited, consider data augmentation, transfer learning, or synthetic data—always flag these in methods.
+
+5. **Assess Generalizability**
+
+   Perform sensitivity analyses: how do results change if you drop 10-20 % of data or vary domain characteristics?

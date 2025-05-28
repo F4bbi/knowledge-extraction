@@ -1,0 +1,38 @@
+# 📝 Paper Writing Guidelines for Authors
+
+This guide outlines key principles to help authors avoid common pitfalls and meet the expectations of peer reviewers and the broader research community.
+
+## 1. 📊 Comparison to Prior Work
+
+Authors often claim novelty without fair, head-to-head benchmarks against the most relevant baselines.
+
+**Best-Practice Solutions:**
+
+1. **Conduct a Focused Literature Review**
+
+   * Identify 3-5 seminal and recent papers tackling the same problem.
+   * Highlight gaps your approach fills.
+
+2. **Re-implement or Use Published Code**
+
+   * Whenever possible, obtain or re-implement baseline methods rather than quoting old results.
+   * Match preprocessing, hyperparameters, and evaluation metrics exactly.
+
+3. **Present Results in Comparative Tables**
+
+   ```markdown
+   | Method        | Dataset     | Metric     | Result         |
+   |---------------|-------------|------------|----------------|
+   | Proposed      | X           | Accuracy   | 87.4 %         |
+   | Baseline A    | X           | Accuracy   | 82.1 %         |
+   | Baseline B    | X           | Accuracy   | 84.3 %         |
+   ```
+
+   * Include confidence intervals or standard errors for each entry.
+
+4. **Discuss Trade-Offs**
+
+   * If your method improves one metric but worsens another (e.g., speed vs. accuracy), analyze why.
+   * Be transparent about limitations relative to baselines.
+
+## 2. ...

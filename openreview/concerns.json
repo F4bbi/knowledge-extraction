@@ -1,0 +1,521 @@
+{
+  "Carpe Diem, Seize the Samples Uncertain *at the Moment* for Adaptive Batch Selection | OpenReview": [
+    "Rigorous Experimentation: Many submissions fall short on experimental rigor—insufficient controls, lack of repeatability, vague protocol descriptions, or no statistical power analysis.",
+    "Comparison to Prior Work: Authors often claim novelty without fair, head-to-head benchmarks against the most relevant baselines.",
+    "Quantitative Claims Need Proof: Percentages are meaningless without a clear definition of the metric, baseline, and statistical significance. For example, 'Our method is 20% better' is vague without context.",
+    "Dataset Size & Diversity: Too-small or homogenous datasets lead to overfitting and findings that don't generalize."
+  ],
+  "Prestopping: How Does Early Stopping Help Generalization Against Label Noise? | OpenReview": [
+    "Lack of comparison with relevant baselines: Authors did not compare with key existing methods (e.g., [1], [2], [3]) or failed to cite important related works on early-stopping and label noise.",
+    "Limited novelty: The proposed method is described as incremental or too similar to prior work (e.g., self-training, co-training, iterative learning with noisy labels).",
+    "Insufficient experimental validation: Experiments were conducted on small-scale datasets (e.g., CIFAR-10, CIFAR-100) without testing on larger, more challenging datasets (e.g., ImageNet, Clothing1M).",
+    "Missing theoretical analysis: Existing literature provides theoretical justification for early-stopping in label noise, but the paper lacks such analysis.",
+    "Inadequate discussion of results: The paper did not thoroughly analyze the method's effectiveness (e.g., maximal safe set illustration, comparison with more baselines, use of clean validation data)."
+  ],
+  "Analysis and Interpretation of Deep CNN Representations as Perceptual Quality Features | OpenReview": [
+    "Lack of demonstration that PE score improvements lead to practical benefits in tasks like image generation or super-resolution.",
+    "Inadequate comparison to baselines (e.g., random feature selection, orientation-only/frequency-only metrics).",
+    "Insufficient experimental rigor, including small or non-diverse datasets, limited repeatability, and lack of statistical power analysis.",
+    "Ambiguity in defining and interpreting metrics (e.g., PE score calculation, use of derivatives/maxima instead of correlation).",
+    "Poor presentation of results (e.g., unclear figures, tables, and lack of visual clarity).",
+    "Limited connection to human perceptual studies or biological plausibility (e.g., comparison to human visual cortex data).",
+    "Overreliance on human perceptual data in PE score definition, potentially biasing results.",
+    "Lack of exploration of PE score limitations (e.g., hand-crafted features with maximal PE).",
+    "Unclear explanation of key concepts (e.g., CSF, contrast masking, DMOS, SROCC).",
+    "Incomplete or anecdotal experiments with limited generalizability."
+  ],
+  "Improving Evolutionary Strategies with Generative Neural Networks | OpenReview": [
+    "Experimental results are limited to low-dimensional problems and lack comparison with state-of-the-art methods like CMA-ES.",
+    "Insufficient demonstration of the method's ability to achieve the stated goal of improving exploration and handling multi-modal distributions.",
+    "Unclear or ambiguous technical details, including algorithmic steps, the use of NICE models, and the concept of \"global volume.\"",
+    "Limited validation on higher-dimensional benchmarks and challenging tasks that highlight the method's advantages over traditional ES approaches.",
+    "Lack of clarity on how the proposed method's flexibility in the search distribution is effectively utilized during optimization."
+  ],
+  "Wide Neural Networks are Interpolating Kernel Methods: Impact of Initialization on Generalization | OpenReview": [
+    "**Insufficient novelty and significance** compared to existing works, with missed citations and lack of clear differentiation from prior research.",
+    "**Low technical contribution** and limited theoretical advancements, with key results (e.g., Theorem 2, 3, 4) containing fundamental errors or being trivial extensions of known results.",
+    "**Incomplete or unclear generalization bounds**, including failure to address conditions under which test error can be small.",
+    "**Inadequate comparison with prior literature** on neural tangent kernels, interpolating kernel methods, and generalization bounds for overparameterized networks.",
+    "**Errors in proofs and theorem statements**, such as incorrect bounds, misuse of uniformity in proofs, and inconsistent treatment of test data.",
+    "**Lack of sufficient experimental validation** or discussion on the practical implications of theoretical findings.",
+    "**Missing context on initialization scale** and its impact on the NTK regime, including potential oversight in relating initialization to network width."
+  ],
+  "SSE-PT: Sequential Recommendation Via Personalized Transformer | OpenReview": [
+    "Limited Technical Novelty: The paper's contributions are perceived as incremental or scattered, with minimal extensions beyond existing techniques like SASRec and SSE.",
+    "Insufficient Experimental Validation: Results lack convincing evidence, including discrepancies in comparisons with prior work, unclear evaluation metric changes, and limited ablation studies.",
+    "Inadequate Baseline Comparisons: The experiments do not sufficiently compare with key baseline methods (e.g., BERT4Rec, Fossil) or address the effectiveness of the proposed approach rigorously.",
+    "Weak Justification for Design Choices: Questions remain about the necessity and effectiveness of specific components (e.g., sampling strategies, regularization techniques) without thorough analysis."
+  ],
+  "Scoring-Aggregating-Planning: Learning task-agnostic priors from interactions and sparse rewards for zero-shot generalization | OpenReview": [
+    "Insufficient comparison to strong baselines and lack of rigorous evaluation in zero-shot scenarios.",
+    "Weak theoretical/analytical justification for the method's effectiveness and assumptions.",
+    "Limited ablation studies on key components of the proposed framework.",
+    "Concerns about the generalizability and feasibility of the approach across diverse tasks and environments.",
+    "Ambiguity in the experimental setup and reward signal handling for zero-shot generalization.",
+    "Lack of clarity in mathematical formulation and description of the method.",
+    "Questions about the necessity and impact of the proposed architecture for zero-shot RL."
+  ],
+  "Count-guided Weakly Supervised Localization Based on Density Map | OpenReview": [
+    "Insufficient Experimental Validation: All reviews highlight the lack of comprehensive experiments, with qualitative results and limited dataset evaluation.",
+    "Limited Comparison with Existing Methods: No thorough comparison to traditional techniques (e.g., background subtraction) or established baselines (e.g., Glance, C-WSL).",
+    "Lack of Theoretical Justification: Techniques (e.g., Gini impurity, VAE connection) are criticized for being ad-hoc or lacking novelty and theoretical grounding.",
+    "Inadequate Evaluation Protocols: Experiments are not conducted on standard datasets (e.g., USCD, Trancos) with proper metrics (e.g., MAE, GAME).",
+    "Missing Ablation Studies: No analysis of individual components (e.g., pooling layers removal, rotation invariance) or their impact on performance.",
+    "Ambiguity in Weakly Supervised Framework: Use of point supervision in equations contradicts the weakly supervised claim."
+  ],
+  "Star-Convexity in Non-Negative Matrix Factorization | OpenReview": [
+    "**Typos and Notation Errors**: Multiple serious typos, inconsistent notation, and missing definitions (e.g., \"mu\" in Fact 1, Lemma 9 in Lemma 1, missing constants in equations).",
+    "**Theoretical Proof Issues**: Flawed or unclear derivations (e.g., equation (3) correction, missing constants in appendix, unclear assumptions in Big-O notation, and lack of justification for strong theoretical assumptions).",
+    "**Experimental Concerns**: Irrelevant datasets in experiments (e.g., datasets with r < 10), lack of statistical significance, unclear metrics (e.g., \"relative deviation\" normalization without explanation), and missing standard deviations in results.",
+    "**Conjecture and Explanation Gaps**: Hand-wavy conjectures on concentration of measure, unclear connection to real-world implications, and insufficient explanation of phenomena (e.g., minima at lambda=0.5 in Figure 3).",
+    "**Implementation and Reproducibility**: No open code provided, lack of handling for sparsity in datasets, and unclear procedures for determining decomposition rank in practice.",
+    "**Proof Clarity and Completeness**: Missing lemmas (e.g., Lemma 9), unclear proof steps (e.g., equation (9) derivation), and ambiguous definitions (e.g., \"measure\" in concentration of measure conjecture).",
+    "**Optimization and Generalization**: Overlooking challenges in finding global minima despite convexity claims, and lack of discussion on generalization beyond the over-parameterized regime."
+  ],
+  "Noise Regularization for Conditional Density Estimation | OpenReview": [
+    "Lack of novelty: The method of adding noise for regularization is not novel and has been widely used in various applications.",
+    "Insufficient or unconvincing experiments: The experiments are small-scale, lack convincing results, and do not demonstrate the method's effectiveness on larger or more diverse datasets.",
+    "Scalability concerns: The approach may not scale well to large datasets, as it resembles kernel density estimation, which is known to have scalability issues.",
+    "Asymptotic theoretical results: The theoretical analysis is asymptotic and does not provide practical insights into the method's advantages or performance.",
+    "Unclear explanations: Key parts of the paper, such as the interpretation of terms in equations, are poorly explained or confusing.",
+    "Limited comparison with prior work: The paper does not adequately compare the method with existing techniques (e.g., Lipschitz regularization) or provide strong justification for its novelty.",
+    "Lack of empirical validation: The experiments do not sufficiently validate the method's benefits across different tasks or parametric families."
+  ],
+  "Amharic Negation Handling | OpenReview": [
+    "Lack of novelty in the approach.",
+    "Limited experimental evaluation, with insufficient comparisons to prior work and lack of diverse datasets.",
+    "Poor writing quality, lack of clarity, and imprecise descriptions in the methodology and experiments.",
+    "Insufficient justification for the proposed method's uniqueness or motivation.",
+    "Inadequate analysis of results, including missing ablation studies and theoretical insights.",
+    "Dataset limitations (e.g., too small, not generalizable, or not representative).",
+    "Poorly presented figures and algorithms, with issues like pixelation, lack of organization, and unclear explanations."
+  ],
+  "Neural Maximum Common Subgraph Detection with Guided Subgraph Extraction | OpenReview": [
+    "Lack of ablation studies to evaluate individual components' contributions.",
+    "Reliance on existing methods (e.g., GMN) questions novelty.",
+    "Experiments on small graphs limit generalizability.",
+    "Insufficient comparison to alternative approaches (e.g., QAP-based baselines).",
+    "Use of heuristic stopping criteria without proper justification.",
+    "Potential improvements in graph embedding models (e.g., DGCNN over GCN).",
+    "Weak theoretical justification for post-processing normalization and GSE.",
+    "Limited analysis of scalability to larger graphs due to reliance on solver-supervised training."
+  ],
+  "Context-aware Attention Model for Coreference Resolution | OpenReview": [
+    "Incremental technical contribution: The paper introduces only minor improvements (e.g., adding one feature and an attention layer) without substantial innovation.",
+    "Weak experimental results: Minimal performance gains (e.g., 0.2 F1 points) and lack of strong evidence to support the proposed method.",
+    "Limited dataset diversity: Experiments conducted on a single dataset (CoNLL 2012), restricting generalizability.",
+    "Unclear methodology: Lack of explanation for key components (e.g., grammatical numbers feature, benefits of attention mechanism).",
+    "Insufficient comparison to prior work: Misrepresentation of previous models (e.g., Lee et al. 2018) and lack of thorough evaluation.",
+    "Poor presentation: Issues with citation format, table clarity, and unclear equations/ablation results.",
+    "Minimal performance improvement: The marginal gains do not justify the paper's contribution for a top conference."
+  ],
+  "When Does Self-supervision Improve Few-shot Learning? | OpenReview": [
+    "**Limited novelty** compared to prior work (e.g., Gidaris et al. 2019, multi-task learning with self-supervision is incremental).",
+    "**Insufficient justification** for claims (e.g., self-supervised tasks outperforming data augmentation, effectiveness of domain selection).",
+    "**Weak experimental setup** in Section 4.2 (e.g., unclear domain distance definition, flawed unlabeled pool methodology).",
+    "**Trivial or predictable results** (e.g., performance gaps increasing with harder tasks, domain shift experiments not aligned with claims).",
+    "**Over-reliance on image domain** and lack of generalization to other domains or tasks.",
+    "**Inadequate comparison** to prior methods in similar settings (e.g., domain adaptation, semi-supervised learning).",
+    "**Excessive scope** with many details relegated to the appendix, potentially reducing clarity.",
+    "**Flawed domain shift analysis** (e.g., Figure 4d misrepresenting trends, lack of shared classes in extreme domain shift cases)."
+  ],
+  "Deep Reasoning Networks: Thinking Fast and Slow, for Pattern De-mixing | OpenReview": [
+    "Overclaiming the reasoning aspect, with the model not actually performing reasoning but relying on manually defined constraints.",
+    "Lack of proper baselines or comparison to relevant prior work, particularly in tasks like Sudoku and generalization to other domains.",
+    "Poorly described experiments and unclear methodology, especially in the XRD section.",
+    "Use of pretrained generative decoders, which may limit the approach's applicability and novelty.",
+    "Test set retraining (retraining on the test data) undermining the validity of results.",
+    "Unclear or unexplained dynamic weight updates for constraints.",
+    "Insufficient justification for the framework's generalizability beyond the specific tasks addressed.",
+    "Weak connection between the proposed work and the concept of \"reasoning\" as advertised."
+  ],
+  "HOW IMPORTANT ARE NETWORK WEIGHTS? TO WHAT EXTENT DO THEY NEED AN UPDATE? | OpenReview": [
+    "Lack of novelty or significant contribution",
+    "Insufficient experimental validation and lack of comparison to prior work",
+    "Inadequate analysis and lack of theoretical justification",
+    "Limited dataset diversity and scale",
+    "Practical benefits not demonstrated"
+  ],
+  "Stochastically Controlled Compositional Gradient for the Composition problem | OpenReview": [
+    "Lack of significant differentiation from prior work (e.g., [Xiangru Lian et al., 2017], [A.Devraj & J.Chen (2019)], [1][2]).",
+    "Limited experimental scope and diversity (e.g., only nonlinear-embedding problems tested).",
+    "Convergence results not clearly superior to existing methods (e.g., [1][2]).",
+    "Missing key related work citations.",
+    "Insufficient empirical comparisons with state-of-the-art methods."
+  ],
+  "Probabilistic modeling the hidden layers of deep neural networks | OpenReview": [
+    "Lack of clear validation for the claim that the i.i.d. assumption is invalid.",
+    "Insufficient theoretical justification for the proposed probabilistic models (e.g., Gibbs distribution, PoE).",
+    "Weak comparison with existing methods (e.g., RBMs, BHMs) and unclear differentiation of the approach.",
+    "Ambiguity in the role and effectiveness of the proposed regularization term.",
+    "Concerns about the practical impact of the method on widely used networks (e.g., ResNet).",
+    "Poor clarity and writing quality, making the paper difficult to follow.",
+    "Insufficient explanation of the relationship between the proposed model and Bayesian inference.",
+    "Lack of rigorous experiments or analysis to support the claims."
+  ],
+  "On the Decision Boundaries of Deep Neural Networks: A Tropical Geometry Perspective | OpenReview": [
+    "Lack of clear motivation and explanation for the theoretical contribution of tropical geometry.",
+    "Insufficient comparison to prior work and missing relevant references.",
+    "Ambiguity in the definition and interpretation of key concepts (e.g., tropical quotient, upper faces, normals).",
+    "Unclear or overly technical explanations of theorems and their implications.",
+    "Concerns about the experimental focus being too broad and lacking depth.",
+    "Inadequate clarification of the adversarial attack approach and its relevance.",
+    "Issues with figure descriptions and visualizations (e.g., Figure 2, Figure 4).",
+    "Need for more detailed experimental results, including repetitions and standard deviations.",
+    "Questions about the uniqueness and practical implications of the functions described in Theorem 2.",
+    "Suggestions to improve clarity for non-experts and build intuition for complex concepts.",
+    "Ambiguity in the relationship between the dual subdivision and the decision boundaries.",
+    "Lack of discussion on the implications of the adversarial attack method.",
+    "Terminology concerns (e.g., \"nuisance\" for adversarial attacks).",
+    "Need for better organization and focus in the experimental sections."
+  ],
+  "Accelerated Information Gradient flow | OpenReview": [
+    "Lack of clear motivation and explanation for the ideas presented.",
+    "Poor writing style, unclear explanations, and grammatical errors.",
+    "Insufficient experimental validation with limited and simple test cases.",
+    "Need for more thorough and comprehensive experiments.",
+    "Theoretical contributions not well communicated or contextualized."
+  ],
+  "EgoMap: Projective mapping and structured egocentric memory for Deep RL | OpenReview": [
+    "Limited novelty/originality, relying heavily on existing components.",
+    "Insufficient experimental analysis and ablation studies.",
+    "Experiments conducted in overly simple/synthetic environments (e.g., VizDoom) without testing in more realistic or complex settings.",
+    "Lack of theoretical justification or explanation for key design choices (e.g., projective geometry).",
+    "Inadequate comparison to prior work and failure to demonstrate distinct technical contributions.",
+    "Missing experiments on tasks where the inductive bias may not be necessary or beneficial."
+  ],
+  "Neural Linear Bandits: Overcoming Catastrophic Forgetting through Likelihood Matching | OpenReview": [
+    "Lack of Theoretical Guarantees: All reviews highlight the absence of rigorous theoretical analysis, such as regret bounds or convergence guarantees, which weakens the paper's contribution.",
+    "Insufficient Experimental Comparison: The paper lacks comparisons with relevant baselines, especially methods addressing catastrophic forgetting (e.g., regularization techniques) and other state-of-the-art approaches.",
+    "Limited Dataset Diversity: Experiments are conducted on narrow datasets (e.g., supervised learning tasks, not RL datasets), raising concerns about generalizability and real-world applicability.",
+    "Missing Experimental Details: Critical information about experiment setups (e.g., reward definitions, SDP solver accuracy, hyperparameters) is omitted, reducing reproducibility and transparency.",
+    "Scalability and Generalizability Concerns: The method's reliance on linear features and its linear complexity in action number raises doubts about scalability to more complex or high-dimensional settings.",
+    "Weak Justification for Key Components: The effectiveness of the proposed likelihood matching and covariance approximation lacks thorough analysis or explanation, particularly in nonlinear settings."
+  ],
+  "AutoSlim: Towards One-Shot Architecture Search for Channel Numbers | OpenReview": [
+    "Limited Novelty: The method is based on existing approaches like slimmable networks and DropPath, with insufficient differentiation from prior work.",
+    "Inadequate Comparison to Baselines: Lack of fair comparison with pruning methods (e.g., AMC, ThiNet) and insufficient clarification on how the proposed method differs from existing techniques.",
+    "Missing Experimental Details: Insufficient ablation studies, unclear training protocols, and lack of information on starting models, hyperparameters, and search costs.",
+    "Inconsistent Baseline Evaluation: Baselines (e.g., MobileNet, ResNet) may not be trained under the same conditions, affecting the validity of comparisons.",
+    "Ambiguity in Methodology: Unclear justification for architectural choices (e.g., channel distribution in deep layers) and lack of details on transferability, training procedures, and time complexity.",
+    "Missing Captions/Data: Figures and tables lack captions, and some critical metrics (params, memory, latency) are omitted."
+  ],
+  "Scaling Up Neural Architecture Search with Big Single-Stage Models | OpenReview": [
+    "Lack of clear explanation for implementation details (e.g., masking strategy, grid search methodology).",
+    "Insufficient comparison to prior work and unclear justification for non-trivial extensions.",
+    "Overreliance on heavy data augmentation, limiting valid comparisons to other methods.",
+    "Lack of theoretical insights or generalization to other tasks/datasets (e.g., CIFAR, MNIST).",
+    "Need for ablation studies and more comprehensive experiments (e.g., super-net performance, search efficiency).",
+    "Missing figures/clarifications (e.g., search space visualization, statistical reporting in figures).",
+    "Ambiguity in methodological motivations and combination of existing techniques."
+  ],
+  "Semantics Preserving Adversarial Attacks | OpenReview": [
+    "Lack of proper comparison to prior work, particularly Song et al. (2018) and others.",
+    "Use of different norms (e.g., L2 vs. L-infinity) leading to unfair comparisons in experiments.",
+    "Concerns about the method's effectiveness in preserving semantics, especially in NLP tasks.",
+    "Weak pilot study with limited sample size and unclear evaluation questions in NLP examples.",
+    "Terminology inconsistency (using \"adversarial success rate\" instead of \"attack success rate\").",
+    "Inadequate alignment with existing adversarial attack frameworks, particularly for black-box vs. white-box scenarios.",
+    "Arbitrary choices in the algorithm with unclear motivation and lack of theoretical guarantees."
+  ],
+  "Out-of-Distribution Detection Using Layerwise Uncertainty in Deep Neural Networks | OpenReview": [
+    "Misuse of reparameterization trick and variational inference objective (missing KL-divergence term).",
+    "Lack of proper comparison with state-of-the-art OOD detection methods (e.g., Mahalanobis distance, ODIN).",
+    "Insufficient theoretical motivation for assuming unimodal Gaussian distributions across latent spaces.",
+    "Empirical results underperforming compared to prior work (e.g., lower classification accuracy on benchmarks).",
+    "Unclear explanation of how features are used for OOD detection and the role of mu/sigma in the model.",
+    "Insufficient ablation studies to validate the effectiveness of sigma over mu or other components.",
+    "Concerns about model convergence and degenerate solutions due to stochasticity in training.",
+    "Poor clarity in explanations, ambiguous terminology, and lack of detailed methodology descriptions.",
+    "Inadequate justification for splitting mu and sigma, and discarding mu for OOD detection.",
+    "Small number of training epochs and unclear training procedures impacting experimental validity."
+  ],
+  "Explaining A Black-box By Using A Deep Variational Information Bottleneck Approach | OpenReview": [
+    "**Clarity and Explanation of Equations/Methodology**: Vague or insufficient explanations of key equations (e.g., Equation 2), unclear definitions of variables (e.g., z), and lack of context before introducing complex components (e.g., hierarchical LSTM).",
+    "**Comparison to Baselines/State-of-the-Art**: Lack of fair benchmarks against attentional methods or standard models (e.g., IMDb, MNIST).",
+    "**Dependence on Hand-Crafted Cognitive Chunks**: Reliance on task-specific chunking strategies without clear criteria or exploration of alternatives.",
+    "**Weak Experimental Section**: Insufficient analysis of how parameters (e.g., bottleneck thickness *k*) affect results, unclear evaluation metrics, and ambiguous interpretations of human judgments.",
+    "**Insufficient Discussion of Approximator Quality**: Lack of analysis on how the approximator’s fidelity (e.g., *q(y|t)*) impacts interpretability and alignment with *p(y|x)*.",
+    "**Ambiguities in Methodology Descriptions**: Unclear or overly technical phrasing (e.g., \"Negative Sentiment if any negative words\"), lack of citations for novel terms (e.g., hierarchical LSTM), and undefined symbols/notations.",
+    "**Missing Inter-annotator Agreement or Reproducibility**: No mention of human evaluation reliability or standard splits in datasets (e.g., IMDb).",
+    "**Theoretical vs. Practical Interpretability**: Concerns that theoretical compression (e.g., minimal sufficient statistic) may not align with human interpretability or comprehensiveness.",
+    "**Inadequate Addressing of Limitations**: Lack of discussion on methodological shortcomings (e.g., reliance on approximators, chunking strategies) or potential biases in experiments."
+  ],
+  "ROBUST DISCRIMINATIVE REPRESENTATION LEARNING VIA GRADIENT RESCALING: AN EMPHASIS REGULARISATION PERSPECTIVE | OpenReview": [
+    "Experiments lack comparison with recent state-of-the-art methods (e.g., symmetric cross entropy from ICCV2019, Lee et al. 2019 ICML).",
+    "Insufficient testing on asymmetric noise and non-vision tasks.",
+    "Lack of theoretical justification for claims about emphasis focus/spread and their impact on robustness.",
+    "Hyperparameters (alpha, beta) require extensive tuning with no clear guidance, risking overfitting.",
+    "Limited experimental validation (e.g., no confidence intervals, inconsistent baselines across datasets).",
+    "Ambiguous definitions and unclear mathematical formulations (e.g., emphasis focus/spread, \"semantically abnormal examples\").",
+    "Interaction with optimizers (e.g., Adam) and scalability on small datasets not addressed.",
+    "Insufficient clarity in methodology and experimental setup for fair comparisons."
+  ],
+  "Dimensional Reweighting Graph Convolution Networks | OpenReview": [
+    "Theoretical analysis lacks clarity and contains unjustified assumptions, making it unclear how the proposed method relates to the claimed variance reduction.",
+    "Experimental improvements are not statistically significant or well-justified, with limited comparison to existing methods across datasets.",
+    "The conceptual contribution is incremental and not sufficiently distinct from existing normalization techniques like batch normalization.",
+    "The paper's writing and explanations are unclear, particularly for non-experts, with ambiguous notation and insufficient intuitive explanations.",
+    "The relationship between the proposed method and the theoretical analysis is not fully aligned, including discrepancies in architecture and assumptions.",
+    "The variance reduction mechanism and key measures (e.g., *K*) are not clearly defined or validated experimentally.",
+    "The use of certain parameters (e.g., sigma_g, sigma_s) and the design choices (e.g., two-layer neural network for weight parameterization) lack sufficient motivation or explanation."
+  ],
+  "VIDEO AFFECTIVE IMPACT PREDICTION WITH MULTIMODAL FUSION AND LONG-SHORT TEMPORAL CONTEXT | OpenReview": [
+    "Lack of Novelty: The proposed methods are seen as combinations of existing techniques without sufficient original contributions that justify publication in top conferences.",
+    "Insufficient Experimental Validation: Ablation studies and detailed comparisons to demonstrate the effectiveness of the claimed contributions (e.g., two-time-scale structure, progressive training) are missing or inadequate.",
+    "Unclear Technical Explanations: Key aspects of the methodology (e.g., loss function choice, progressive training strategy, equation formulations) are not sufficiently explained or justified.",
+    "Limited Theoretical/Analytical Justification: The framework lacks rigorous theoretical analysis or deeper insights into why the proposed methods work, relying heavily on empirical results.",
+    "Weak Contribution Claims: The novelty of the contributions (e.g., residual-based training, long temporal fusion) is questioned, with reviewers suggesting they are trivial or not sufficiently distinct from prior work."
+  ],
+  "Visual Imitation with Reinforcement Learning using Recurrent Siamese Networks | OpenReview": [
+    "Poor technical writing and clarity of presentation.",
+    "Insufficient experimental evaluation, including limited comparison with state-of-the-art methods.",
+    "Lack of robustness analysis and stability concerns in the proposed method.",
+    "Limited evaluation on diverse or real-world domains.",
+    "Inadequate theoretical justification or analysis of the method's effectiveness."
+  ],
+  "Label Cleaning with Likelihood Ratio Test | OpenReview": [
+    "**Theoretical guarantees** are questioned for their assumptions, clarity, and practical relevance.",
+    "**Hyperparameter tuning** (e.g., Delta, burn-in epochs) lacks detailed justification and validation.",
+    "**Computational cost** comparison between proposed and standard methods is unclear.",
+    "**Generalization to multiclass settings** requires more explanation.",
+    "**Real-world dataset experiments** (e.g., Clothing1M) are missing or underemphasized.",
+    "**Time complexity** and **convergence analysis** are not addressed.",
+    "**Comparison to noise-free data** and detailed baselines are requested.",
+    "**Theoretical bounds** are criticized for being vacuous or overly dependent on opaque constants.",
+    "**Assumptions in theorems** (e.g., linear model relationship) are deemed unrealistic or unproven.",
+    "**Empirical robustness** to hyperparameters needs clearer validation."
+  ],
+  "Data augmentation instead of explicit regularization | OpenReview": [
+    "Lack of clear motivation and comparison to prior work (e.g., combination of data augmentation with explicit regularization).",
+    "Insufficient experimental rigor (e.g., ImageNet resolution mismatch, suboptimal results compared to state-of-the-art).",
+    "Inadequate hyperparameter tuning for explicit regularization and data augmentation.",
+    "Vague definitions of explicit vs. implicit regularization.",
+    "Limited theoretical analysis (e.g., reliance on Rademacher complexity without deeper insights).",
+    "Narrow empirical scope (focus on image classification, lack of experiments in other domains like NLP).",
+    "Missing comprehensive survey of regularization techniques across tasks and domains.",
+    "Incomplete or unclear description of data augmentation parameters and protocols.",
+    "Lack of head-to-head benchmarks against relevant baselines.",
+    "Insufficient discussion of the non-i.i.d. nature of augmented data in theory.",
+    "Ambiguity in the paper’s claims about the effectiveness of data augmentation over explicit regularization."
+  ],
+  "Support-guided Adversarial Imitation Learning | OpenReview": [
+    "**Reward bias and its handling**: Concerns about whether SAIL effectively addresses reward bias and whether the non-negative reward design is ad-hoc or insufficient for general cases.",
+    "**Experimental setup and results consistency**: Questions about state distribution mismatch in Lunar Lander, inconsistency between figures (e.g., Figure 4 vs. Table 2), and lack of statistical significance or detailed metrics in results.",
+    "**Comparison to prior work**: Lack of fair benchmarks against relevant baselines (e.g., DAC, AIRL, IRL methods) and unclear justification for novelty.",
+    "**Theoretical guarantees**: Absence of optimality guarantees for the learned policy and unclear theoretical analysis (e.g., assumptions about GAIL’s support estimation).",
+    "**Support estimation and reward reliability**: Concerns about the reliability of RED’s reward and whether the combined SAIL reward truly improves stability and generalization.",
+    "**Implementation and naming clarity**: Ambiguity in experimental naming (e.g., GAIL vs. GAIL-log) and lack of clarity in algorithmic descriptions.",
+    "**Stochasticity and evaluation**: Questions about the impact of stochastic policies on demonstration and evaluation trajectories, and missing data on demonstration reward distributions.",
+    "**Statistical analysis and variance**: Insufficient reporting of standard deviations, variance in results (e.g., Half-Cheetah), and lack of statistical power analysis.",
+    "**Generalization and robustness**: Doubts about the method’s generalization to MDPs where Q-values outside the expert support may dominate, and lack of analysis for non-deterministic expert policies."
+  ],
+  "Low Bias Gradient Estimates for Very Deep Boolean Stochastic Networks | OpenReview": [
+    "Insufficient clarity in explaining the *Bernoulli splitting trick*.",
+    "Theoretical analysis lacks quantification of estimator variance, especially after modifications.",
+    "Experiments are incomplete, with missing ablations and comparisons to key baselines (e.g., Gumbel-Softmax, REBAR).",
+    "Weak connection between theoretical contributions and empirical results.",
+    "Poor readability, formatting issues, and typos in the paper.",
+    "Theoretical derivations (e.g., Fourier analysis) are criticized as unnecessary or overly complex.",
+    "Concerns about the correctness of proofs and assumptions (e.g., Lemma 3’s proof).",
+    "Missing practical guidance for hyperparameters (e.g., representation scaling)."
+  ],
+  "X-Forest: Approximate Random Projection Trees for Similarity Measurement | OpenReview": [
+    "**Novelty concerns**: The proposed method may not be sufficiently novel, with claims of innovation overlapping with existing work (e.g., RP trees, X-Projection trees, beta-similarity).",
+    "**Insufficient experimental rigor**: Lack of statistical analysis, repeated experiments, or clarification of results (e.g., single-run experiments, unclear significance of results in Fig. 6).",
+    "**Inadequate comparison to prior work**: Missing comparisons to relevant baselines (e.g., multi-partition-based methods, Mahalanobis distance, Extremely randomized trees).",
+    "**Ambiguous definitions and claims**: Unclear explanations of key terms (e.g., DIS_i(X, Y), m, beta parameter), and vague justifications for the method’s perceptual or prior knowledge independence.",
+    "**Conceptual clarity issues**: The X-Projection tree and beta-similarity lack clear conceptual differentiation from existing methods (e.g., layer-by-layer RP trees, random forests).",
+    "**Overstated or unproven claims**: Assertions about perceptual similarity, independence from prior knowledge, or superiority over Euclidean distance lack support.",
+    "**Implementation and reproducibility**: Missing details on implementation (e.g., code, hyperparameters), and unclear whether speed gains are due to algorithmic improvements or implementation choices.",
+    "**Language and presentation flaws**: Poor writing, grammatical errors, and unclear structure (e.g., vague introduction, confusing definitions).",
+    "**Evaluation limitations**: Reliance on label-based clustering metrics without considering unsupervised alternatives, and lack of exploration of beta-similarity parameter sensitivity."
+  ],
+  "Learning Reusable Options for Multi-Task Reinforcement Learning | OpenReview": [
+    "Lack of thorough evaluation and insufficient comparison with prior work (e.g., Harb 2018, Hausman 2018, OptionCritic).",
+    "Unclear definitions and justification for \"near-optimal\" policies and their metrics.",
+    "Weak demonstration of multi-task reusability and generalization across tasks.",
+    "Insufficient explanation of how options are learned and validated, including unclear source of \"near-optimal\" trajectories.",
+    "Limited experimental scope (e.g., few Atari games, lack of high-dimensional or continuous control benchmarks).",
+    "Poor clarity in the paper’s writing, including ambiguous descriptions of tasks, objectives, and evaluation methods."
+  ],
+  "TechKG: A Large-Scale Chinese Technology-Oriented Knowledge Graph | OpenReview": [
+    "Lack of Technical Contribution: The paper is criticized for not presenting novel technical methods, focusing instead on data collection and description without clear innovation.",
+    "Insufficient Experimental Demonstration: No experiments are provided to show how the knowledge graph (KG) benefits machine learning tasks or improves upon existing benchmarks.",
+    "Misalignment with Conference Scope: The work is deemed unsuitable for ICLR due to its focus on data curation rather than learning representations or deep learning.",
+    "Weak Related Work Section: The paper fails to clearly address limitations of existing KGs or explain how the proposed tech-specific KG overcomes them.",
+    "Lack of Comparison to Prior Work: No benchmarking against existing techniques for tasks like name deduplication or KG construction.",
+    "Ambiguous Terminology: The paper is criticized for mislabeling a bibliographic database as a KG, without sufficient justification for its semantic richness.",
+    "Missing Key Features: The absence of a citation graph and unclear methodologies for defining hierarchical relations or data sources.",
+    "Poor Integration of Appendix: The appendix contains valuable information but is not effectively distilled into the main paper."
+  ],
+  "Effective Mechanism to Mitigate Injuries During NFL Plays | OpenReview": [
+    "Lack of algorithmic novelty: The paper uses conventional machine learning methods (e.g., K-NN, XGBoost, SVM) without introducing novel algorithms or theoretical contributions.",
+    "Poor alignment with ICLR's focus: The work is deemed too applied, industry-specific, or lacking in relevance to the core research interests of the ICLR community.",
+    "Insufficient experimental validation: The experiments are criticized for not adequately demonstrating the method's advantages or providing rigorous comparisons to baselines.",
+    "Issues with writing and clarity: The paper is described as poorly written, redundant, or overly focused on low-level implementation details rather than high-level contributions."
+  ],
+  "Stabilizing DARTS with Amended Gradient Estimation on Architectural Parameters | OpenReview": [
+    "**Theoretical validity and generalization**: Concerns about the theory's applicability to non-convex NAS, potential \"gradient traps,\" and whether the proposed method fully addresses the problem.",
+    "**Empirical rigor**: Lack of ablation studies, insufficient analysis of where improvements come from, and unclear evidence for the proposed solution's effectiveness.",
+    "**Comparison to baselines**: Inadequate or unfair comparisons with existing methods (e.g., DARTS, SOTA techniques like early stopping), and limited generalization to other approaches.",
+    "**Tractability of Hessian-based computations**: Questions about the feasibility of computing the Hessian matrix, especially in high-dimensional spaces, and how the proposed approximation avoids intractability.",
+    "**Clarity of experiments**: Need for more detailed experiments (e.g., learning curves, toy examples of gradient traps) and clearer demonstrations of the method's impact.",
+    "**Writing and exposition**: Redundant equations, unclear terminology (e.g., \"auxiliary loss tower\"), and grammatical/structural issues in the paper.",
+    "**Contribution and novelty**: Perceived limitations in the method's novelty (similar techniques exist in hyperparameter optimization) and its contribution compared to existing SOTA methods.",
+    "**Computational efficiency**: Questions about the reported speedup in computation and the choice of search space for experiments."
+  ],
+  "Utilizing Edge Features in Graph Neural Networks via Variational Information Maximization | OpenReview": [
+    "Theoretical analysis is insufficient or lacks depth.",
+    "Need for ablation studies on hyperparameters and edge feature impact.",
+    "Comparison to prior work, especially infomax.",
+    "Motivation for focusing on edge features rather than node features.",
+    "Experimental results interpretation (e.g., training loss improvement).",
+    "Citing foundational work (infomax by Linsker).",
+    "Potential for trivial solutions in the loss formulation.",
+    "Lack of exploration on the effect of hyperparameters on model performance."
+  ],
+  "Learning Structured Communication for Multi-agent Reinforcement Learning | OpenReview": [
+    "Lack of reproducibility details (hyperparameters, tuning justification, repeated runs).",
+    "Insufficient clarity in methodology and terminology (e.g., unclear acronyms, ambiguous claims, lack of theoretical support).",
+    "Weak positioning relative to existing literature (e.g., overlooked relevant works, unclear motivation).",
+    "Grammatical and writing issues affecting readability and professionalism.",
+    "Unclear or inconsistent explanations of key components (e.g., message categorization, POSs in Algorithm 1).",
+    "Limited discussion of scalability trade-offs and practical implications."
+  ],
+  "Towards Stable and comprehensive Domain Alignment: Max-Margin Domain-Adversarial Training | OpenReview": [
+    "Limited experimental scope and lack of comparison with state-of-the-art methods on diverse datasets (e.g., image recognition, NLP, Office-Home, DomainNet).",
+    "Insufficient evaluation on benchmark domain adaptation datasets (e.g., Office, OfficeHome) to demonstrate generalizability.",
+    "Weak novelty claim due to similarity to existing methods (e.g., contrastive loss, Siamese GANs, Energy-based GANs).",
+    "Inadequate explanation of methodological differences from related works (e.g., MDAT vs. SiGAN, DIRT-T, Maximum Classifier Discrepancy).",
+    "Poorly addressed hyperparameter selection and unclear notation (e.g., asterisk in Table 1, typos in equations).",
+    "Lack of interpretability analysis and stability evaluation on large-scale or complex datasets.",
+    "Missing critical references to relevant prior work (e.g., Zhao et al., 2016)."
+  ],
+  "Group-Connected Multilayer Perceptron Networks | OpenReview": [
+    "Limited Novelty and Incremental Contributions: The proposed architecture is seen as a minor variation of standard MLPs, with insufficient justification for its distinctiveness.",
+    "Weak Empirical Results: Improvements over baselines are marginal (often <1%), with limited demonstration of effectiveness on diverse or large-scale datasets.",
+    "Insufficient Theoretical/Intuitive Explanation: Lack of clear motivation for key design choices (e.g., grouping mechanism, softmax normalization, parameter relationships).",
+    "Over-Reliance on Small/Homogeneous Datasets: Experiments are conducted on small or limited datasets (e.g., MNIST, CIFAR-10), raising concerns about generalizability.",
+    "Poor Visualization/Analysis of Group-Select Mechanism: Limited or unclear insights into how groups are formed or their impact on performance.",
+    "Missing Ablation Studies and Hyperparameter Analysis: Critical components (e.g., group selection, annealing schedules, window sizes) lack thorough investigation.",
+    "Inadequate Comparison to Prior Work: Insufficient benchmarking against relevant baselines or failure to address limitations of existing methods.",
+    "Ambiguity in Methodology: Unclear details on implementation (e.g., pixel permutation, group selection criteria, parameter settings) hinder reproducibility."
+  ],
+  "Regional based query in graph active learning | OpenReview": [
+    "Inconsistent or unsupported experimental results.",
+    "Confusing or contradictory claims in the paper.",
+    "Lack of clarity in methodology and presentation.",
+    "Insufficient discussion on combining techniques or determining the right approach.",
+    "Minor writing and formatting issues affecting readability."
+  ],
+  "RL-LIM: Reinforcement Learning-based Locally Interpretable Modeling | OpenReview": [
+    "**Misapplication of Reinforcement Learning (RL):** The method is not properly grounded in RL principles, with unclear state transitions and a lack of decision-making at each time step, suggesting it may be better classified as a Multi-Armed Bandit (MAB) problem.",
+    "**Necessity of RL:** The use of RL is questioned as non-essential, with suggestions that differentiable approximations or simpler methods (e.g., random sampling, straight-through estimators) could achieve similar results more efficiently.",
+    "**Lack of Baseline Comparisons:** No rigorous comparisons to differentiable alternatives or simpler baselines are provided to validate the necessity and effectiveness of the RL-based approach.",
+    "**Insufficient Analysis of Sample Efficiency:** The paper does not address or compare the sample efficiency of the RL method, particularly in relation to potential differentiable alternatives.",
+    "**Limited Insight into Weighting Function Behavior:** The weighting function’s behavior (e.g., entropy, sample selection patterns) is not analyzed, leaving unclear how or why specific samples are chosen.",
+    "**Ambiguity in Methodology Justification:** The paper lacks clear justification for the non-differentiable subsampling approach and its overhead, particularly in dynamic settings where the dataset may change."
+  ],
+  "Data Valuation using Reinforcement Learning | OpenReview": [
+    "Lack of comparison to relevant baselines",
+    "Limited ablation studies to evaluate design choices",
+    "Dataset limitations (small, not diverse tasks)",
+    "Hyperparameters and reproducibility issues (e.g., fixed values, unclear architecture)",
+    "Choice of discrete representation for the data value estimator (motivation unclear)"
+  ],
+  "Equivariant neural networks and equivarification | OpenReview": [
+    "**Lack of clear comparison to prior work** (e.g., steerable nets, gauge equivariant nets, capsule networks).",
+    "**Insufficient experimental validation** (limited datasets, unclear methodology, no baseline comparisons).",
+    "**Ambiguity in theoretical/practical connections** (e.g., how group theory maps to implementation, parameter sharing, computational overhead).",
+    "**Confusing or vague experimental setup** (e.g., data augmentation vs. proposed method, fine-tuning procedure, parameter count claims).",
+    "**Overlooked or underemphasized limitations** (e.g., finite group constraints, lack of generalization to continuous symmetries).",
+    "**Inadequate demonstration of novelty** (similar to existing works, no clear differentiation from prior methods).",
+    "**Poorly explained key concepts** (e.g., equivariance, orbits, variable sharing, group actions).",
+    "**Insufficient empirical results** (e.g., no analysis of rotation robustness, lack of performance metrics, unclear figures).",
+    "**Typos, grammatical errors, and unclear writing** (impeding readability and understanding).",
+    "**Unaddressed scalability issues** (parameter explosion, computational complexity, and network size claims)."
+  ],
+  "Unifying Graph Convolutional Neural Networks and Label Propagation | OpenReview": [
+    "Theoretical analysis is unclear or lacks sufficient explanation.",
+    "Insufficient experimental validation of the model's contributions, particularly regarding the impact of LPA.",
+    "Lack of connection between theoretical analysis and practical features described in experiments.",
+    "Marginal improvements in results and limited comparison with varying labeled samples.",
+    "Need for better explanations or graphical aids in proofs."
+  ],
+  "Advantage Weighted Regression: Simple and Scalable Off-Policy Reinforcement Learning | OpenReview": [
+    "Insufficient emphasis on novelty and lack of clear articulation of contribution.",
+    "Overlap with prior work (e.g., Fitted Q-iteration by Advantage Weighted Regression), leading to incremental contributions.",
+    "Weak experimental results: failure to outperform existing methods on standard benchmarks (e.g., MuJoCo tasks).",
+    "Inadequate benchmark selection (e.g., using uncommon tasks like LunarLander instead of standard ones).",
+    "Insufficient experimental rigor (e.g., using only 5 seeds for MuJoCo experiments).",
+    "Lack of theoretical or empirical analysis of key components (e.g., value function estimation stability).",
+    "Missing citations to closely related work, weakening the novelty claim.",
+    "Ambiguities in equations, algorithm descriptions, and code implementation details."
+  ],
+  "Cascade Style Transfer | OpenReview": [
+    "Lack of Novelty: The proposed methods are criticized as simple combinations of existing techniques without addressing fundamental challenges in style transfer.",
+    "Insufficient Experimental Analysis: Limited exploration of hyperparameters, lack of systematic studies on the effect of combining multiple methods, and minimal quantitative evaluation.",
+    "Missing Literature Review: The paper fails to thoroughly compare with prior work on mixing styles or address key references in the field.",
+    "Reliance on Qualitative Results: Overemphasis on qualitative comparisons without robust quantitative analysis to validate claims of improvement.",
+    "Incomplete/Unconvincing User Studies: Poorly designed or inadequately reported human preference studies, with missing details on methodology, statistical significance, and bias control."
+  ],
+  "FoveaBox: Beyound Anchor-based Object Detection | OpenReview": [
+    "Lack of clear differentiation from prior work (e.g., similarity to CenterNet, FCOS, DeepMask).",
+    "Insufficient comparison with existing methods in terms of performance, speed, and hyperparameters.",
+    "Limited experimental analysis (e.g., ablation studies on other datasets, computational cost).",
+    "Discretization of scale still resembling anchor-based approaches.",
+    "Ambiguity in addressing overlapping bounding boxes and inference efficiency.",
+    "Writing clarity and technical explanation issues (e.g., unclear figures, confusing descriptions)."
+  ],
+  "Diving into Optimization of Topology in Neural Networks | OpenReview": [
+    "Lack of theoretical analysis and depth in experiments",
+    "Small or unclear empirical improvements in accuracy",
+    "Need for reporting variance across multiple experimental runs",
+    "Insufficient comparison to prior work (e.g., DARTS, [4], Xie et al.)",
+    "Terminology issues (e.g., \"searching space\" vs. \"search space,\" \"topology\" vs. \"soft topology\")",
+    "Ambiguity in methodology and setup (e.g., Table 3, sparsity regularization)",
+    "Lack of clarity in explanations and figures",
+    "Limited novelty compared to existing methods (e.g., DARTS, MaskConnect)",
+    "Missing related work in neural architecture search (NAS) context",
+    "Concerns about the definition and discretization of \"topology\"",
+    "Inadequate explanation of baselines and their differences from prior approaches"
+  ],
+  "Learning to Defense by Learning to Attack | OpenReview": [
+    "Theoretical Justification: Lack of sufficient theoretical analysis or guarantees (e.g., certified robustness) to support the method's effectiveness.",
+    "Comparison to State-of-the-Art: Insufficient comparison with existing methods (e.g., TRADES, Carlini’s work) or evaluation under different threat models (e.g., L2, unrestricted attacks).",
+    "Evaluation Rigor: Need for more thorough evaluation, including adaptive attack testing and validation of claims (e.g., the \"limiting cycle\" argument in Figure 1).",
+    "Training and Generalization: Limited discussion on training challenges, heuristics, or how the framework generalizes beyond the tested scenarios (e.g., CIFAR-10/100).",
+    "Practical Utility: Concerns about the framework’s practicality, including the effectiveness of the attacker network and its impact on defense performance."
+  ],
+  "Unsupervised Learning of Node Embeddings by Detecting Communities | OpenReview": [
+    "Lack of Clarity in Algorithm Description: The paper fails to clearly summarize the complete algorithm, including input, output, and parameters, leading to confusion about the method's structure.",
+    "Insufficient Comparison to Prior Work: The paper does not adequately compare with relevant baselines (e.g., community-preserving node embedding methods or existing spectral approaches), reducing the perceived novelty.",
+    "Inconsistent or Incomplete Empirical Evaluation: Results are compared using different measures across tables, and experiments lack scalability/efficiency analysis on large graphs or comparisons with alternative two-step methods.",
+    "Limited Novelty: The approach is seen as combining existing techniques without sufficient differentiation from prior work (e.g., methods that transfer matrix E to H to P).",
+    "Ambiguity in Theoretical Justification: The paper lacks detailed explanation of the learning process (e.g., how the node embedding matrix E is obtained) and deeper analysis of the method's theoretical underpinnings.",
+    "Inadequate Analysis of Results: Trends in experimental results (e.g., increasing/decreasing performance with batch size) are not thoroughly explained, and the correlation between detected communities and original labels is not investigated."
+  ],
+  "Make Lead Bias in Your Favor: A Simple and Effective Method for News Summarization | OpenReview": [
+    "Lack of comparison to established baselines (e.g., BERTSUM, DUC datasets, GPT-2).",
+    "Insufficient evaluation on diverse or human-annotated datasets (e.g., DUC, real-world summarization tasks).",
+    "Missing ablation studies to analyze the contribution of key components (e.g., lead bias, filtering criteria).",
+    "No human evaluation to validate the quality of generated summaries.",
+    "Inconsistent or unclear experimental setup (e.g., varying hyperparameters, metrics, data filtering criteria).",
+    "Lack of statistical significance analysis for reported results.",
+    "Concerns about novelty, with claims of non-unique ideas (e.g., lead bias in datasets).",
+    "Ambiguous or incomplete explanations in the paper (e.g., unclear methodology, unclear sentences in sections)."
+  ],
+  "Deep Audio Prior | OpenReview": [
+    "Lack of detailed model architecture and training process descriptions",
+    "Insufficient experimental details (e.g., hyperparameter tuning, evaluation protocols, statistical analysis)",
+    "Limited dataset diversity and lack of comparison to standard benchmarks",
+    "Ambiguous or missing theoretical/motivational justification for method choices",
+    "Poor presentation clarity (e.g., typos, unclear figures, inconsistent equations)",
+    "Inadequate explanation of key components (e.g., loss function behavior, source generation)",
+    "Missing ablation studies or analysis of critical parameters (e.g., annealing schedules, window sizes)",
+    "Overreliance on qualitative results without quantitative validation",
+    "Lack of discussion on generalizability across tasks or domains",
+    "Incomplete or vague descriptions of algorithms and their potential edge cases"
+  ]
+}
